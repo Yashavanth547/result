@@ -104,9 +104,9 @@ if login_btn:
 
         # Add new result
         with st.expander("➕ Add / Update Student Result"):
-        roll_no = st.text_input("Roll Number", key="roll_input")
-        name = st.text_input("Student Name", key="name_input")
-        marks = st.text_area("Enter Marks (comma separated)", key="marks_input")
+            roll_no = st.text_input("Roll Number", key="roll_input")
+            name = st.text_input("Student Name", key="name_input")
+            marks = st.text_area("Enter Marks (comma separated)", key="marks_input")
 
             if st.button("Save Result"):
                 try:
@@ -140,6 +140,7 @@ if login_btn:
 
     else:
         st.sidebar.error("❌ Invalid login credentials (Hint: admin / 1234)")
+
 
 
 
